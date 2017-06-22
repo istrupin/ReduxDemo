@@ -2,6 +2,14 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 class BookDetail extends Component{
+    //dont need this -- just wanted to see if it would work since reducer adds props
+    constructor(props){
+        super(props);
+        console.log('firing constructor');
+
+    }
+
+
     render() {
 
         if(!this.props.book){
